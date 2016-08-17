@@ -2,6 +2,47 @@
  * Main style sheet
  */
 
-body {
-	font-family: sans-serif;
+body, html {
+	font-family: FiraMono;
+	font-size: 16px;
+	height: 100%;
+}
+
+.ratio-2x1 {
+	
+}
+
+.site-navigation {
+	padding-left: 0;
+	list-style: none;
+
+	li {
+		display: flex;
+		align-items: center;
+
+		&:before {
+			content: "";
+			display: block;
+			padding-left: percentage(1 / 2);
+			height: 100%;
+		}
+
+		&:after {
+			content: "";
+			display: block;
+			width: 1.25rem;
+			display: block;
+			border-top: 1px solid black;
+
+		}
+	}
+
+
+	&__link {
+
+		color: black;
+		font-size: 0.938rem;
+		font-weight: 400;
+		text-transform: uppercase;
+	}
 }
